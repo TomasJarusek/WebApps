@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://jarusek.wz.cz/</loc>
+  <lastmod>2022-02-02T19:52:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/index.html</loc>
+  <lastmod>2022-02-02T19:52:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/index_cplusplus.html</loc>
+  <lastmod>2022-02-02T21:01:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/NBodyProblem/index.html</loc>
+  <lastmod>2022-02-02T19:53:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/DoublePendulum/index.html</loc>
+  <lastmod>2022-02-02T19:49:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/Pendulum/index.html</loc>
+  <lastmod>2022-02-02T19:50:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/DifferentialEquations/index.html</loc>
+  <lastmod>2022-02-02T19:50:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/SudokuSolver/index.html</loc>
+  <lastmod>2022-02-02T19:50:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/ArcticCircle/index.html</loc>
+  <lastmod>2022-02-02T19:50:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/TravellingSalesman/index.html</loc>
+  <lastmod>2022-02-02T19:50:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/Sorting/index.html</loc>
+  <lastmod>2022-02-02T19:50:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/CollisionDetection/index.html</loc>
+  <lastmod>2022-02-02T19:50:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/VIN/VIN-Projekt.html</loc>
+  <lastmod>2022-02-02T19:52:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/JavaScript/DopplerEffect/index.html</loc>
+  <lastmod>2022-02-02T19:52:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/C++/2Dkdtree/index.html</loc>
+  <lastmod>2022-02-02T19:56:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/C++/RangeQuadtree/index.html</loc>
+  <lastmod>2022-02-02T20:50:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jarusek.wz.cz/C++/PointQuadtree/index.html</loc>
+  <lastmod>2022-02-02T19:59:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

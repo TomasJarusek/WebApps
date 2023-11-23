@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>VIN-Nápověda</title>
+		<link rel="stylesheet" type="text/css" href="style2.css" charset="utf-8">
+	</head>
+	<body>
+		<h1>Vizualizér desetinného rozvoje čísel za pomoci beziérových křivek</h1>
+		<h2>Projekt VIN, Tomáš Jarůšek, 23.1.2019</h2>
+		<h1>Popis a Návod</h1>
+		<p>Funkcionalita vizualizéru vychází z elipsy. Každá číslice má vyhrazené své místo na elipse, rovnoměrně<br>
+		rozprostřené podle úhlu. Poté se začne číst ze vstupu a jednotlivé číslice se spojí pomocí bezierových<br>
+		křivek.Výsledkem je unikátní obrazec pro jakékoliv číslo, který reprezentuje jeho desetinný rozvoj.<br>
+		<br>
+		<b>Tento obrazec je následně možné dále upravovat.</b><br>
+		- Šířka a výška elipsy<br>
+		- Počet číslic zobrazených v obrazci<br>
+		- Beziérova křivka je dána dvěma body (ty jsou zafixovány na elipse), mohutností a úhlem vektoru,<br>
+		&nbsp&nbspkterý z nich vychází. Mohutnost i úhel vektoru pro oba body je možné upravit.<br>
+		- Aby se počáteční a koncové body spojnic číslic nepřekrývali, tak se po zobrazení každé číslice <br>
+		&nbsp&nbspposune start následující číslice o danný úhel, který můžeme měnit.<br>
+		- Tloušťka spojnicových čar<br>
+		- Násobič rozlišení obrázku pro uložení<br>
+		- Viditelnost vodící čáry a popisu<br>
+		- Nastavení barev (v základu se barva mění z jedné barvy do druhé podle toho kolik číslic je již <br>
+		&nbsp&nbspzpracováno(obě barvy je možno nastavit) nebo každé číslici můžeme nastavit unikatní barvu (barvy <br>
+		&nbsp&nbspjsou náhodné, ale možné je změnit na jinou náhodnou variaci pomocí tlačítka))<br>
+		- Vstupní číslice<br></p>
+			
+		<h1>Ukázky</h1>
+		<p><b>Číslo "e"</b></p>
+		<img src="demo1.jpg" alt="e" width="80%" height="80%">
+		<p><b>Číslo 1.111111111111111113333333333......</b></p>
+		<img src="demo3.jpg" alt="1.11111..." width="80%" height="80%">
+		<p><b>Číslo 1.48148148148148148148148148148.....</b></p>
+		<img src="demo2.jpg" alt="1.48148148....." width="80%" height="80%">
+	</body>
+</html>

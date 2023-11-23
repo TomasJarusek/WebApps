@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pendulum</title>
+		<meta name="description" content="Accurate simulation of simple pendulum.">
+		<link rel="stylesheet" type="text/css" href="../style.css" charset="utf-8">
+		<link rel="shortcut icon" type="image/x-icon" href="pendulum_icon.ico" />
+		<!-- https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
+		<!-- https://onlinepngtools.com/create-transparent-png -->
+		<!-- https://www.xiconeditor.com -->
+
+		<script src="../StandaloneFunctions/ResizeHandler.js" type="text/javascript"></script>
+		<script src="../StandaloneFunctions/HTMLDOMFunctions.js" type="text/javascript"></script>
+		<script src="../StandaloneFunctions/Keyboard.js" type="text/javascript"></script>
+		<script src="../StandaloneFunctions/Math.js" type="text/javascript"></script>
+		<script src="../StandaloneFunctions/GraphDraw.js" type="text/javascript"></script>
+		<script src="pendulum.js" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script>		
+	</head>
+	
+	<!-- vypnuti right click popup aby se dalo pohybovat pravym kliknutim -->
+	<body oncontextmenu="return false">
+		<canvas id="canvas" width="1450" height="950"></canvas>
+
+		<div class="menu">
+			<div class="inputContainer" id="slider1">
+			</div>
+			<div class="inputContainer" id="slider2">
+			</div>		
+			<div class="inputContainer" id="slider3">
+			</div>
+			<div class="inputContainer" id="slider4">
+			</div>
+			<div class="inputContainer" id="slider5">
+			</div>
+			<div class="inputContainer" id="slider6">
+			</div>
+			<div class="inputContainer" id="checkbox1">
+			</div>
+			<div class="inputContainer" id="checkbox2">
+			</div>
+			<div class="inputContainer" id="button1">
+			</div>
+			<div class="inputContainer" id="button2">
+			</div>
+			<div class="inputContainer" id="returnToMenu">
+				<button onclick="window.location.href='../../index.html'" class="button" id="returnToMenuButton">Back to main page</button>
+			</div>
+		</div>
+	</body>
+</html>

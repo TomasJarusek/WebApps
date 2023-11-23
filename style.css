@@ -1,0 +1,193 @@
+h1,h2,h3
+{
+	font: inherit;
+    color: inherit;
+
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------------------------------*/
+
+body
+{
+	margin: 50px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu
+{
+	font-weight: bold;
+
+	overflow:auto;
+	
+	padding-bottom: 10px;
+}
+
+.menu_item
+{
+	font-size: 40px;
+
+	margin-right: 50px;
+
+	float: left;
+}
+
+.menu_item a
+{
+	color: black;
+}
+
+.menu_item a:link
+{
+	text-decoration: none;
+}
+
+.menu_item a:visited
+{
+	text-decoration: none;
+}
+
+.header
+{
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+/*------------------------------------------------*/
+
+.javascript_option a:hover
+{
+	text-decoration: none !important;
+
+	color: green;
+}
+
+.cplusplus_option a:hover
+{
+	text-decoration: none !important;
+
+	color: red;
+}
+
+body.cplusplus .subtitle
+{
+	font-size: 45px;
+
+	margin-bottom: 5px;
+	padding-left: 20px;
+}
+
+body.cplusplus .description
+{
+	font-size: 20px;
+	margin-bottom: 20px;
+	
+	padding-left: 20px;
+}
+
+body.cplusplus .subtitle a
+{
+	color: rgb(167, 14, 14);
+}
+
+body.cplusplus .description a
+{
+	color: rgb(167, 14, 14);
+}
+
+body.cplusplus a:link
+{
+	text-decoration: none;
+}
+
+body.cplusplus a:visited
+{
+	text-decoration: none;
+}
+
+body.cplusplus a:hover
+{
+	text-decoration: underline;
+}
+
+/*------------------------------------------------*/
+
+body.javascript .header
+{
+	background-color: #adebad;
+}
+
+body.cplusplus .header
+{
+	background-color: #eeb9b9;
+}
+
+.title
+{
+	padding-bottom: 5px;
+
+	font-size: 25px;
+}
+
+.title_info
+{
+	font-size: 15px;
+}
+
+body.javascript .subtitle
+{
+	font-size: 45px;
+
+	margin-bottom: 5px;
+	padding-left: 20px;
+}
+
+body.javascript .description
+{
+	font-size: 20px;
+	margin-bottom: 20px;
+	
+	padding-left: 20px;
+}
+
+body.javascript .subtitle a
+{
+	color: green;
+}
+
+body.javascript .description a
+{
+	color: green;
+}
+
+body.javascript a:link
+{
+	text-decoration: none;
+}
+
+body.javascript a:visited
+{
+	text-decoration: none;
+}
+
+body.javascript a:hover
+{
+	text-decoration: underline;
+}
+
+/*------------------------------------------------*/
+
+.personalInformation
+{
+	border-top: 2px solid black;
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	
+	padding: 10px;
+	padding-left: 20px;
+}

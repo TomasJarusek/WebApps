@@ -1,0 +1,223 @@
+
+body
+{
+	text-align:center;
+
+	height: 99vh;
+
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
+
+	font-size: 0;
+}
+
+canvas
+{
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+.menu
+{
+	display: inline-block;
+
+	vertical-align: middle;
+
+	width: 15vw;
+
+	height: 99vh;
+
+	margin-left: 0.5vw;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: 1.7vh;
+	font-family: Arial, Helvetica, sans-serif;
+
+	overflow: auto;
+}
+
+.textDIV
+{
+	width: 100%;
+
+	margin: 0;
+
+	text-align: center;
+	white-space: normal;
+}
+
+.sliderDIV
+{
+	width: 100%;
+}
+
+.slider
+{
+	width: 100%;
+
+	height: 1vh;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1vh;
+
+	-webkit-appearance: none;
+	border-radius: 0.5vh;
+	background: #d3d3d3;
+	outline: none; 
+	opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb
+{
+	width: 1.5vh;
+	height: 1.5vh;
+
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 1.5vh; 
+	background: #4CAF50;
+	cursor: pointer;
+}
+
+.textboxDIV
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1vh;
+}
+
+.textbox
+{
+	width: 99%;
+
+	padding: 0;
+
+	margin: 0;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-align: center;
+
+	border: 0.1vh solid #d3d3d3;
+	border-radius: 0.4vh;
+}
+
+.textareaDIV
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0.5vh;
+}
+
+.textarea
+{
+	width: 99%;
+	height: 31.8vh;
+
+	padding: 0;
+
+	margin: 0;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-align: center;
+
+	border: 0.1vh solid #d3d3d3;
+	border-radius: 0.4vh;
+}
+
+.checkboxDIV
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1vh;
+}
+
+.checkbox
+{
+	width: 1.4vh;
+    height: 1.4vh;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0.2vh;
+	margin-bottom: 0.1vh;
+}
+
+.selectDIV
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1vh;
+}
+
+.selector
+{
+	width: 100%;
+
+	margin: 0;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-overflow: ellipsis;
+
+	outline: none;
+	border-radius: 0.4vh;
+	border: 0.1vh solid #d3d3d3;
+}
+
+.buttonDIV
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0.5vh;
+}
+
+.button
+{
+	display: inline-block;
+
+	width: 100%;
+
+	padding: 0.7vh;
+
+	margin: 0;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 0.4vh;
+}
+
+button:disabled,button[disabled]
+{
+	background-color: #707070;
+}

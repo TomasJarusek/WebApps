@@ -1,0 +1,345 @@
+/*Ing. Tomas Jarusek, 10/2023*/
+
+body
+{
+	/*canvas and menu horizontal center align*/
+	text-align:center;
+
+	height: 99vh;
+
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
+
+	/*removes unwanted spaces from in between elements*/
+	font-size: 0;
+}
+
+canvas
+{
+	/*important for horizontal align*/
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+.menu
+{
+	/*important for horizontal align*/
+	display: inline-block;
+
+	vertical-align: middle;
+
+	width: 20vw;
+	min-width: 250px;
+	/*max-width: 750px;*/
+
+	/*menu height is equal to whole screen height, so it can be vertically centered and menu items can still start from the top of the screen*/
+	/*align middle for menu and align top for canvas did not work*/
+	height: 99vh;
+
+	margin-left: 0.5vw;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: 1.7vh;
+	font-family: Arial, Helvetica, sans-serif;
+
+	overflow: auto;
+}
+
+.inputContainer
+{
+	float: left;
+
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1vh;
+}
+
+.inputContainerDouble
+{
+	float: left;
+
+	width: 48%;
+
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 0;
+	margin-bottom: 1vh;
+}
+
+.description
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0.5vh;
+
+	text-align: center;
+	white-space: normal;
+}
+
+.slider
+{
+	width: 100%;
+
+	height: 1vh;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1vh;
+
+	-webkit-appearance: none;
+	border-radius: 0.5vh;
+	background: #d3d3d3;
+	outline: none; 
+	opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb
+{
+	width: 1.5vh;
+	height: 1.5vh;
+
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 1.5vh; 
+	background: #4CAF50;
+	cursor: pointer;
+}
+
+.textBox
+{
+	width: 99%;
+
+	padding: 0;
+
+	margin: 0;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-align: center;
+
+	border: 0.1vh solid #d3d3d3;
+	border-radius: 0.4vh;
+}
+
+.textBoxTextMode
+{
+	width: 99%;
+
+	padding: 0;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0.5vh;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-align: center;
+
+	border: 0.1vh solid #d3d3d3;
+	border-radius: 0.4vh;
+}
+
+.dropdownMenu
+{
+	width: 100%;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0.5vh;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-overflow: ellipsis;
+
+	outline: none;
+	border-radius: 0.4vh;
+	border: 0.1vh solid #d3d3d3;
+}
+
+.button
+{
+	display: inline-block;
+
+	width: 100%;
+
+	padding: 0.7vh;
+
+	margin: 0;
+
+	font-size: inherit;
+	font-family: inherit;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 0.4vh;
+}
+
+button:disabled,button[disabled]
+{
+	background-color: #707070;
+}
+
+.doubleButtonLeft
+{
+	width: 49%;
+	margin-right: 1%;
+}
+
+.doubleButtonLeft:disabled,.doubleButtonLeft[disabled]
+{
+	width: 49%;
+	margin-right: 1%;
+}
+
+.doubleButtonRight
+{
+	width: 49%;
+	margin-left: 1%;
+}
+
+.doubleButtonRight:disabled,.doubleButtonRight[disabled]
+{
+	width: 49%;
+	margin-left: 1%;
+}
+
+/*description for checkbox has its own styling, because it is at the same line as checkbox*/
+.description[id*=checkbox]/**/
+{
+	float:left;
+
+	width: 80%;
+
+	margin: 0;
+
+	text-align: left;
+}
+
+.checkbox
+{
+	float:right;
+
+	vertical-align: middle;
+
+	width: 1.4vh;
+    height: 1.4vh;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0.2vh;
+	margin-bottom: 0.1vh;
+
+	-webkit-appearance: none;
+    border-radius: 0.4vh;
+	border: 0.1vh solid #d3d3d3;
+}
+
+.checkbox:checked
+{
+    background-color: #4CAF50;
+	border: 0.1vh solid #4CAF50;
+}
+
+#returnToMenu
+{
+	margin-bottom: 0;
+}
+
+#returnToMenuButton
+{
+  background-color: #D35400;
+}
+
+/*sudoku*/
+/*idea taken from https://codepen.io/sdobson/pen/aEWBQw*/
+/*sudoku consists of a list in a form of a grid*/
+
+/*menu width is 20% of the screen, so the sudoku is going to be 19% to fit*/
+/*everything else is calculated relative to this value using calc()*/
+
+/*bold lines in sudoku grid */
+li:nth-child(n):nth-child(-n+9)
+{
+  border-top-width: calc((19vw/9)/8);
+}
+
+li:nth-child(n+73):nth-child(-n+81)
+{
+  border-bottom-width: calc((19vw/9)/8);
+}
+
+li:nth-child(3n) 
+{
+  border-right-width: calc((19vw/9)/8);
+}
+
+li:nth-child(9n+1)
+{
+  border-left-width: calc((19vw/9)/8);
+}
+
+li:nth-child(n+19):nth-child(-n+27)
+{
+  border-bottom-width: calc((19vw/9)/8);
+}
+
+li:nth-child(n+46):nth-child(-n+54)
+{
+  border-bottom-width: calc((19vw/9)/8);
+}
+
+ul 
+{
+  display: grid;
+  grid-template-columns: repeat(9, calc(19vw/9));
+  grid-template-rows: repeat(9, calc(19vw/9));
+  justify-content: center;
+  align-content: center;
+  grid-gap: 0rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li 
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: calc((19vw/9)/50) solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*sudoku text input cell*/
+.sudokuCell
+{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	font-size: calc(3*(19vw/9)/4);
+	
+	/*no outline after klik*/
+	outline: none;
+}
