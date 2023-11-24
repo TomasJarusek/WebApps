@@ -1,4 +1,3 @@
-//Fourier series
 //Ing. Tomas Jarusek, 11/2023
 
 "use strict";

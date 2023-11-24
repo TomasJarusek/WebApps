@@ -1,4 +1,3 @@
-//Simple Pendulum
 //Ing. Tomas Jarusek, 12/2021
 
 window.onload = function()  

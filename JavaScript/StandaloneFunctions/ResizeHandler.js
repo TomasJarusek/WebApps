@@ -74,7 +74,7 @@ function ScaleCanvas()
 	//apply transform
 	canvasContext.transform(canvasScale, 0, 0, canvasScale, 0, 0);
 
-	//legacy method of scaling canvas manualy using kayboard keys
+	//legacy method of scaling canvas manualy using keyboard keys
 	/*if (IsKeyPressed("Shift") === true && (IsKeyPressed("ArrowUp") === true || IsKeyPressed("ArrowDown") === true || IsKeyPressed("ArrowLeft") === true || IsKeyPressed("ArrowRight") === true))
 	{
 		if (IsKeyPressed("ArrowUp") === true)

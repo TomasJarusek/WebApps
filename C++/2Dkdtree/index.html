@@ -13,17 +13,17 @@
 			2D k-d tree
 		</div>
 		<div class="description">
-			General information can be found on <a href="https://en.wikipedia.org/wiki/K-d_tree">wikipedia</a>.<br>
+			General information can be found on <a href="https://en.wikipedia.org/wiki/K-d_tree" target="_blank">wikipedia</a>.<br>
 			<br>
 			<div class="highlight">Features of my implementation:</div><br>
 			<div class="subDescription">
-			• Tree can be constructed in balanced configuration if all the points are known beforehand.<br><br>
+			• Tree can be constructed in balanced configuration if all points are known beforehand.<br><br>
 			• Dedicated implementation of point relocation. Relocation is always possible to simulate via deletion and reinsertion of a point. However, such process is quite inefficient. My implementation uses two approaches to speed up the process:<br><br>
 				<div class="subDescription">
 				- Memory recycling - k-d tree uses internal structures that have to be allocated/freed when new point is inserted/deleted. So for relocation, pointers to already allocated memory are stored and reused.<br><br>
-				- Bottom up searching for new subtree - when points are relocated, the new location is usually not far from the original location (for example unit movement) and this can be exploited. If the point represents leaf node and is located within its bounding rectangle after relocation, it is only necessary to change its coordinates (tree structure stays the same). If it moved over the bounding rectangle or is not a leaf node, the new position is most likely going to be in a subtree with the same parent or grandparent. So from the subtree that the point is located in, the function starts moving upwards and in each parent, it checks whether or not the point belongs to the bounding rectangle of that subtree. However the situation here is not as simple as in <a href="../../C++/PointQuadtree/index.html">Point Quadtree</a> implementation. Because the the point itself represents the node of the tree, relocating a point requires major restructualization and the performance is only slightly better than deletion/insertion. Also, the performance gain is highly variable.<br><br>
+				- Bottom up searching for new subtree - when points are relocated, the new location is usually not far from the original location and this can be exploited. If point represents leaf node and is located within its bounding rectangle after relocation, it is only necessary to change its coordinates (tree structure stays the same). If it moved over the bounding rectangle or is not a leaf node, the new position is most likely going to be in a subtree with the same parent or grandparent. So from the subtree that the point is located in, the function starts moving upwards and in each parent, it checks whether or not the point belongs to the bounding rectangle of that subtree.<br><br>
 				</div>
-			• Searching for arbitrary number of nearest neigbours is possible as well as searching for n-th closest point.<br><br>
+			• Searching for arbitrary number of nearest neighbours is possible as well as searching for n-th closest neighbour.<br><br>
 			</div>
 		</div>
 

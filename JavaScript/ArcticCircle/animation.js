@@ -1,4 +1,3 @@
-//Arctic circle
 //Ing. Tomas Jarusek, 1/2021
 
 //single empty square
@@ -11,7 +10,7 @@ class EmptySquare
 	}
 	
 	DrawEmptySquare(localContext, cellWidth, gridLineWidth, gridCenterX, gridCenterY, gridDimension, color, displayBlackBorder)
-	{	
+	{
 		let realStartX = Math.ceil(((gridDimension - 1)/2 - this.startX))*-1*cellWidth + gridCenterX + gridLineWidth/2;
 		let realStartY = Math.ceil(((gridDimension - 1)/2 - this.startY))*-1*cellWidth + gridCenterY + gridLineWidth/2;
 		

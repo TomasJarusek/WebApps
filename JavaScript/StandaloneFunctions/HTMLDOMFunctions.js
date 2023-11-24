@@ -1,4 +1,3 @@
-//HTMLDOMFunctions
 //Ing. Tomas Jarusek, 11/2023
 
 //vytvori slider a vlozi do divu, ktery je specifikovan pres ID, poskytuje funkci pro nastaveni a ziskani hodnoty slideru

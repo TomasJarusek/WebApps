@@ -1,4 +1,3 @@
-//Simple Pendulum
 //Ing. Tomas Jarusek, 12/2021
 
 //Pendulum draw class
@@ -319,7 +318,7 @@ function AdvanceSimulation()
         //g(t_n, y_n, y'_n) <==> [-u*y' - (g/L)sin(y)]
         //IMPORTANT - pendulum equation does not use all the available parameters, but it could use all, if it was required
         //now, we will be calculating the steps simultaneously
-        //the form however, is analogical to the first order case
+        //the form however, is analogous to the first order case
         //k1_f = step*f(t_n, y_n, y'_n)
         //k1_g = step*g(t_n, y_n, y'_n)
 

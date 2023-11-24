@@ -1,4 +1,3 @@
-//N-body problem
 //Ing. Tomas Jarusek, 01/2022
 
 

@@ -644,21 +644,3 @@ function processLoop(timeStamp)
     window.requestAnimationFrame(processLoop);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

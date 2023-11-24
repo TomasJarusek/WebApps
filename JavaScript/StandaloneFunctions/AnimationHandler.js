@@ -1,4 +1,3 @@
-//Animation handler
 //Ing. Tomas Jarusek, 11/2023
 
 //class handling events and animations based on their timestamps

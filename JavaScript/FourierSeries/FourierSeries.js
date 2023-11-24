@@ -1,7 +1,5 @@
-//Fourier series
 //Ing. Tomas Jarusek, 11/2023
 
-//---------------------------------------------------------------------------
 //helper functions
 
 let EPSILON = 0.0000000001;
@@ -371,7 +369,7 @@ function ExtendPeriodPortionOfFunctionResultMode(functionPoints)
 
     //positive extension
     i = 1;
-    //we start from the next tvalue to the left
+    //we start from the next value to the left
     currentX = endXResultModeCalculation + stepXResultModeCalculation;
 
     while (endXResultModeCalculation + i*stepXResultModeCalculation <= localEndX)

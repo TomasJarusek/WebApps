@@ -1,4 +1,3 @@
-//Graph drawing
 //Ing. Tomas Jarusek, 11/2023
 
 //standard 2D graph

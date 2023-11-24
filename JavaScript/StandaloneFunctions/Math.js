@@ -1,10 +1,9 @@
-//Math.js
 //Ing. Tomas Jarusek, 11/2023
 
 let EPSILON_math = 0.000000001;
 
 //function numerically calculates definite integral
-//expects list of points [x,y] together start and end x coordinate
+//expects list of points [x,y] together with start and end x coordinate
 //IMPORTANT - requires at least two samples and constant sample rate
 function CalculateDefiniteIntegral(functionValues, startX, endX)
 {
@@ -51,20 +50,20 @@ function CalculateDefiniteIntegral(functionValues, startX, endX)
         }
     }
 
-    //start always has to be smaller then end
+    //start always has to be smaller than end
     if (endX < startX)
     {
         return undefined;
     }
 
-    //startX and endX must be in a existing interval
+    //startX and endX must be in an existing interval
     if (startIntervalIndex < 0 || endIntervalIndex >= lastIntervalIndex)
     {
         return undefined;
     }
 
     //now we can start integrating
-    //we are going to  go from startIntervalIndex to endIntervalIndex and calculate midpoint for each one
+    //we are going to go from startIntervalIndex to endIntervalIndex and calculate midpoint for each one
     //then the midpoint height is going to be multiplied by the sample step to get the area
     //for the startIntervalIndex and endIntervalIndex themselves, the calculated areas are going to be 
     //scaled down based on the position of startX and endX relative to the interval
@@ -331,9 +330,6 @@ function GetNumberAsStringInExponentialForm(number, n)
     //final string consists of base with proper number of places, "·10" and exponent
     return GetRoundedNumberToNPlacesAsShortString(adjustedNumber, n) + "·10" + TranslateWholeNumberIntoUnicodeSuperscript(exponentValue);
 }
-
-
-
 
 
 

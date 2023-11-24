@@ -1,4 +1,3 @@
-//Sudoku solver
 //Ing. Tomas Jarusek, 9/2021
 
 //returns one random valid sudoku

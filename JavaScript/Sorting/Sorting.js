@@ -1,4 +1,3 @@
-//Sorting algorithms
 //Bc. Tomas Jarusek, 3/2019
 
 window.onload = function()  

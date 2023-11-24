@@ -1,4 +1,3 @@
-//Sudoku solver
 //Ing. Tomas Jarusek, 9/2021
 
 //solver engine
@@ -226,8 +225,8 @@ class SudokuSolver
 					
 					//BACKTRACKING
 					
-					//after deterministic changes new backtracking state has to be added 
-					//to the backtrackin stack that points to next free cell that should be tried
+					//after deterministic changes, new backtracking state has to be added 
+					//to the backtracking stack that points to next free cell that should be tried
 					let nextEmptyCellCoordinates = this.sudoku.GetCoordinatesOfNextEmptyCell();
 					
 					if (nextEmptyCellCoordinates.length === 0)

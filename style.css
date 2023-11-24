@@ -191,3 +191,23 @@ body.javascript a:hover
 	padding: 10px;
 	padding-left: 20px;
 }
+
+body.javascript .personalInformation a
+{
+	color: green;
+}
+
+body.cplusplus .personalInformation a
+{
+	color: rgb(167, 14, 14);
+}
+
+.personalInformation a:link
+{
+	text-decoration: none;
+}
+
+.personalInformation a:visited
+{
+	text-decoration: none;
+}

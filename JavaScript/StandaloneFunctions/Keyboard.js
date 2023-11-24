@@ -1,4 +1,4 @@
-// Ing. Tomáš Jarůšek, 9.01.2022
+// Ing. Tomáš Jarůšek, 1/2022
 
 //analogicky jak mys - eventy ale prirazujeme dokumentu, ne canvasu
 
@@ -12,7 +12,6 @@ function ActivateKeyDown()
 		'keydown', 
 		function(event) 
 		{
-			//console.log(event.key);
 			keyIsPressed[event.key] = true;
 		}
 	);

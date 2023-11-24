@@ -1,4 +1,3 @@
-//DrawHelper.js
 //Ing. Tomas Jarusek, 11/2023
 
 //https://en.wikipedia.org/wiki/Typeface_anatomy

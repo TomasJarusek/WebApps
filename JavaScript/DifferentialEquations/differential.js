@@ -1,4 +1,3 @@
-//Differential equations
 //Ing. Tomas Jarusek, 11/2021
 
 //slope field position and size

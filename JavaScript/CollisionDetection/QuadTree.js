@@ -1,4 +1,3 @@
-//Collision detection
 //Bc. Tomas Jarusek
 
 //vystaveni a vyhledani v QuadTree

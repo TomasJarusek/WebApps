@@ -1,4 +1,3 @@
-//Doublew Pendulum
 //Ing. Tomas Jarusek, 12/2021
 
 //double pendulum draw class

@@ -1,4 +1,4 @@
-// Ing. Tomáš Jarůšek, 31.10.2021
+// Ing. Tomáš Jarůšek, 10/2021
 
 // https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
 

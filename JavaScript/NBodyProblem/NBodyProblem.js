@@ -1,4 +1,3 @@
-//N-body problem
 //Ing. Tomas Jarusek, 01/2022
 
 //helper function that returns new copy of input array and adds value to each element
@@ -103,7 +102,7 @@ function AdvanceSimulation()
         //new position values are calculated, so the collisions are checked
         HandleCollisions();
 
-        //adding tracepoints - analogical code from pendulum apllication
+        //adding tracepoints - analogous code from pendulum apllication
         //only difference is that the values are stored for each body
         for (let i = 0; i < bodiesCount; i++)
         {
@@ -124,7 +123,7 @@ function AdvanceSimulation()
         simulationTime += step;
     }
 
-    //smoothing trace line - analogical code from pendulum apllication
+    //smoothing trace line - analogous code from pendulum apllication
     //only difference is that the values are stored for each body
     for (let i = 0; i < bodiesCount; i++)
     {
@@ -166,7 +165,7 @@ function CheckForCollisions()
             //check if they are colliding
 
             //combined radii of both bodies
-             //radius calculation described in draw function
+            //radius calculation described in draw function
             combinedRadii = Math.log10(bodiesMass[i]/10000000000000)*5 + Math.log10(bodiesMass[j]/10000000000000)*5;
             //distance between centers (no square root)
             distanceNoSqrt = (bodiesPositionX[i] - bodiesPositionX[j])**2 + (bodiesPositionY[i] - bodiesPositionY[j])**2;
@@ -508,5 +507,4 @@ function DrawSimulation(localContext)
 
     //info on top
     DrawProgramInformation(localContext);
-
 }

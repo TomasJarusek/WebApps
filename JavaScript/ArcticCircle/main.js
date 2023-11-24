@@ -1,4 +1,3 @@
-//Arctic circle
 //Ing. Tomas Jarusek, 1/2021
 
 window.onload = function()  

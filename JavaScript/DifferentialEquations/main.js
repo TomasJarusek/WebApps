@@ -1,4 +1,3 @@
-//Differential equations
 //Ing. Tomas Jarusek, 11/2021
 
 window.onload = function()  
@@ -135,7 +134,7 @@ function Button1Function()
 	//window.location.href = "http://stackoverflow.com";
 	//window.open("http://stackoverflow.com", '_blank').focus();
 	
-	//open link in new tab (plus sign is no escaped by encodeURI -> manual replace)
+	//open link in new tab (plus sign is not escaped by encodeURI -> manual replace)
 	window.open("https://www.wolframalpha.com/input/?i=dy%2Fdx%3D" + encodeURI(previousUserInput).replaceAll("+", "%2B"), '_blank').focus();
 }
 
