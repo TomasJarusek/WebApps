@@ -732,7 +732,7 @@ function DrawFourierDescription_4_Line_1(localContext, textCurrentStartX, textBa
 {
     let currentText;
 
-    currentText = "Taking an integral over a period P to see how similar x(t) is with sine and cosine," ;
+    currentText = "Taking an integral over a period P₁ to see how similar x(t) is with sine and cosine," ;
 
     SetupTextParameters(localContext, color, font, fontSize);
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
