@@ -275,10 +275,10 @@ function InitAnimationCalendar(localContext, animation)
                     //next description fade in
                     interpolatedColor = AddOpacityToColor("rgb(0,0,0)", percentage);
                     DrawFourierDescription_2_Line_1(localContext, 20, 705, "Times New Roman", 17, interpolatedColor, termNumber + 1);
-                    DrawFourierDescription_2_Line_2(localContext, 20, 745, "Times New Roman", 17, interpolatedColor);
-                    DrawFourierDescription_2_Line_3(localContext, 20, 785, "Times New Roman", 17, interpolatedColor, functionToAnalyzePeriod);
-                    DrawFourierDescription_2_Line_4(localContext, 20, 825, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
-                    DrawFourierDescription_2_Line_5(localContext, 20, 846, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
+                    DrawFourierDescription_2_Line_2(localContext, 20, 735, "Times New Roman", 17, interpolatedColor);
+                    DrawFourierDescription_2_Line_3(localContext, 20, 775, "Times New Roman", 17, interpolatedColor, functionToAnalyzePeriod);
+                    DrawFourierDescription_2_Line_4(localContext, 20, 815, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
+                    DrawFourierDescription_2_Line_5(localContext, 20, 836, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
                 });
             }
         }
@@ -328,10 +328,10 @@ function InitAnimationCalendar(localContext, animation)
             animation.AddAnimationToCalendar(totalAnimationTimeFirstTerm + 0 + (i - 1)*totalAnimationTime, totalAnimationTimeFirstTerm + 6000 + (i - 1)*totalAnimationTime, function(percentage)
             {
                 DrawFourierDescription_2_Line_1(localContext, 20, 705, "Times New Roman", 17, "rgb(0,0,0)", termNumber);
-                DrawFourierDescription_2_Line_2(localContext, 20, 745, "Times New Roman", 17, "rgb(0,0,0)");
-                DrawFourierDescription_2_Line_3(localContext, 20, 785, "Times New Roman", 17, "rgb(0,0,0)", functionToAnalyzePeriod);
-                DrawFourierDescription_2_Line_4(localContext, 20, 825, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod);
-                DrawFourierDescription_2_Line_5(localContext, 20, 846, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod);
+                DrawFourierDescription_2_Line_2(localContext, 20, 735, "Times New Roman", 17, "rgb(0,0,0)");
+                DrawFourierDescription_2_Line_3(localContext, 20, 775, "Times New Roman", 17, "rgb(0,0,0)", functionToAnalyzePeriod);
+                DrawFourierDescription_2_Line_4(localContext, 20, 815, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod);
+                DrawFourierDescription_2_Line_5(localContext, 20, 836, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod);
             });
             
             //draw sine cosine appearance
@@ -353,10 +353,10 @@ function InitAnimationCalendar(localContext, animation)
             {
                 interpolatedColor = AddOpacityToColor("rgb(0,0,0)", 1 - percentage);
                 DrawFourierDescription_2_Line_1(localContext, 20, 705, "Times New Roman", 17, interpolatedColor, termNumber);
-                DrawFourierDescription_2_Line_2(localContext, 20, 745, "Times New Roman", 17, interpolatedColor);
-                DrawFourierDescription_2_Line_3(localContext, 20, 785, "Times New Roman", 17, interpolatedColor, functionToAnalyzePeriod);
-                DrawFourierDescription_2_Line_4(localContext, 20, 825, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
-                DrawFourierDescription_2_Line_5(localContext, 20, 846, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
+                DrawFourierDescription_2_Line_2(localContext, 20, 735, "Times New Roman", 17, interpolatedColor);
+                DrawFourierDescription_2_Line_3(localContext, 20, 775, "Times New Roman", 17, interpolatedColor, functionToAnalyzePeriod);
+                DrawFourierDescription_2_Line_4(localContext, 20, 815, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
+                DrawFourierDescription_2_Line_5(localContext, 20, 836, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
 
                 interpolatedColor = AddOpacityToColor("rgb(0,0,0)", percentage);
                 DrawFourierDescription_2_Line_1(localContext, 20, 705, "Times New Roman", 17, interpolatedColor, termNumber);
@@ -591,10 +591,10 @@ function InitAnimationCalendar(localContext, animation)
                     //next description fade in
                     interpolatedColor = AddOpacityToColor("rgb(0,0,0)", percentage);
                     DrawFourierDescription_2_Line_1(localContext, 20, 705, "Times New Roman", 17, interpolatedColor, termNumber + 1);
-                    DrawFourierDescription_2_Line_2(localContext, 20, 745, "Times New Roman", 17, interpolatedColor);
-                    DrawFourierDescription_2_Line_3(localContext, 20, 785, "Times New Roman", 17, interpolatedColor, functionToAnalyzePeriod);
-                    DrawFourierDescription_2_Line_4(localContext, 20, 825, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
-                    DrawFourierDescription_2_Line_5(localContext, 20, 846, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
+                    DrawFourierDescription_2_Line_2(localContext, 20, 735, "Times New Roman", 17, interpolatedColor);
+                    DrawFourierDescription_2_Line_3(localContext, 20, 775, "Times New Roman", 17, interpolatedColor, functionToAnalyzePeriod);
+                    DrawFourierDescription_2_Line_4(localContext, 20, 815, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
+                    DrawFourierDescription_2_Line_5(localContext, 20, 836, "Times New Roman", 17, interpolatedColor, termNumber + 1, functionToAnalyzePeriod);
                 });
             }
         }

@@ -314,8 +314,38 @@ function Arcsecant(amplitude, period, horOffset, verOffset, x)
     return amplitude*(2*2.327*Math.acos(1/(repeatedX/10 + 1.05)) - 1) + verOffset;
 }
 
+//Combination of square wave and sine using max function
+function MaxSquareWaveSine(amplitude, period, horOffset, verOffset, x)
+{
+    let firstFunctionValue = SquareWave(amplitude, period, horOffset, verOffset, x);
+    let secondFunctionValue = Sine_period(amplitude, period, horOffset, verOffset, x);
 
+    return Math.max(firstFunctionValue, secondFunctionValue);
+}
 
+//Combination of triangle wave and sine using max function
+function MaxTriangleWaveSine(amplitude, period, horOffset, verOffset, x)
+{
+    let firstFunctionValue = TriangleWave(amplitude, period, horOffset, verOffset, x);
+    let secondFunctionValue = Sine_period(amplitude, period, horOffset, verOffset, x);
 
+    return Math.max(firstFunctionValue, secondFunctionValue);
+}
 
+//Combination of sawtooth wave and sine using max function
+function MaxSawtoothWaveSine(amplitude, period, horOffset, verOffset, x)
+{
+    let firstFunctionValue = SawtoothWave(amplitude, period, horOffset, verOffset, x);
+    let secondFunctionValue = Sine_period(amplitude, period, horOffset, verOffset, x);
 
+    return Math.max(firstFunctionValue, secondFunctionValue);
+}
+
+//Combination of sine and cosine using max function
+function MaxCosineSine(amplitude, period, horOffset, verOffset, x)
+{
+    let firstFunctionValue = Sine_period(amplitude, period, horOffset - 0.25, verOffset, x);
+    let secondFunctionValue = Sine_period(amplitude, period, horOffset, verOffset, x);
+
+    return Math.max(firstFunctionValue, secondFunctionValue);
+}

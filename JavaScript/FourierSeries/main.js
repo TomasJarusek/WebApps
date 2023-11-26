@@ -98,7 +98,8 @@ function InsertHTMLElements()
 		"Half circle", "Hyperbola",
 		"Quadratic", "Cubic", "Quartic", "Square root", "Cube root",
 		"Normal distribution",
-		"Sinc function", "Sin(x²)"
+		"Sinc function", "Sin(x²)",
+		"Max(Square wave, Sine)", "Max(Triangle wave, Sine)", "Max(Sawtooth wave, Sine)", "Max(Cosine, Sine)",
 	], "Function to analyze (x(t)):");
 	startResetButtons = new DoubleButton("doubleButton1", "StartButton()", "ResetButton()", "Start", "Reset");
     amplitudeSlider = new CompleteInputBox("slider1", 0.01, 5, 0.001, 1, "", "Amplitude:");
@@ -146,7 +147,10 @@ function MapMenuInputToFunction(menuInput)
 	else if (menuInput === "Arctangent") {return Arctangent;}
 	else if (menuInput === "Arccosine") {return Arccosine;}
 	else if (menuInput === "Arcsecant") {return Arcsecant;}
-	else {return SquareWave;}
+	else if (menuInput === "Max(Square wave, Sine)") {return MaxSquareWaveSine;}
+	else if (menuInput === "Max(Triangle wave, Sine)") {return MaxTriangleWaveSine;}
+	else if (menuInput === "Max(Sawtooth wave, Sine)") {return MaxSawtoothWaveSine;}
+	else if (menuInput === "Max(Cosine, Sine)") {return MaxCosineSine;}
 }
 
 //inicialization
@@ -275,11 +279,6 @@ function processLoop()
 	SychnronizeHTMLElements();
 
 	//------------ APP LOGIC ------------
-
-	if (deltaTime > 20)
-	{
-		console.log(deltaTime);
-	}
 
 	//clear canvas
     context.fillStyle = "rgb(250, 250, 250)";
@@ -599,8 +598,8 @@ function ResetButton()
 	animationStarted = false;
 	animationPaused = false;
 
-	sineGraph.SetAxesDescription("t", "sin(kωt)", 8, 9, 16);
-	cosineGraph.SetAxesDescription("t", "cos(kωt)", 8, 9, 16);
+	sineGraph.SetAxesDescription("t", "sin(kω₁t)", 8, 9, 16);
+	cosineGraph.SetAxesDescription("t", "cos(kω₁t)", 8, 9, 16);
 
 	startResetButtons.EnableFirst();
 	startResetButtons.DisableSecond();

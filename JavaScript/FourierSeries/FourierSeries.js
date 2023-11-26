@@ -990,7 +990,7 @@ function DrawFourierDescription_5_Line_6(localContext, textCurrentStartX, textBa
     currentText = "Current cosine: C" + TranslateWholeNumberIntoUnicodeSubscript(k)
     currentText += " = 2|c" + TranslateWholeNumberIntoUnicodeSubscript(k) + "| = " + (2*positiveCk[0]).toFixed(2).replace("-0", "0") + ", ";
     currentText += "φ" + TranslateWholeNumberIntoUnicodeSubscript(k) + " = arg(c" + TranslateWholeNumberIntoUnicodeSubscript(k) + ") = " + GetRoundedNumberToNPlacesAsShortString(positiveCk[1]/Math.PI, 2) + "π";
-    currentText += "  ➞  " + (2*positiveCk[0]).toFixed(2).replace("-0", "0") + "cos(" + GetRoundedNumberToNPlacesAsShortString((k*PeriodToFrequency(P)/Math.PI), 2) + "πt";
+    currentText += "  ➞  " + (2*positiveCk[0]).toFixed(2).replace("-0", "0") + "·cos(" + GetRoundedNumberToNPlacesAsShortString((k*PeriodToFrequency(P)/Math.PI), 2) + "πt";
     if (positiveCk[1] < 0)
     {
         currentText += " - "
