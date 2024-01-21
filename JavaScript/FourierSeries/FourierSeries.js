@@ -282,7 +282,7 @@ function GenerateCosineFromPositiveAndNegativeCoefficient(negativeCk, positiveCk
 
     //-> the phase of the cosine is directly present inside the coefficients
     //one coefficient is going to be e^jθ, second one is going to be e^-jθ (values at t = 0)
-    //and they will annihilate into the real value of 2*cos(-θ) at t = 0 -> phase is -θ
+    //and they will annihilate into the real value of 2*cos(θ) at t = 0 -> phase is θ
 
     //-> amplitude is based on the coeficient's distance from the origin
     //coefficients can be located at arbitrary distance r from the origin -> r*e^jθ, r*e^-jθ
@@ -290,7 +290,7 @@ function GenerateCosineFromPositiveAndNegativeCoefficient(negativeCk, positiveCk
     //that means that amplitude of a real cosine is going to be 2*r - twice the amplitude of a single complex exponential
 
     //because coefficients are conjugate pairs, this also implies that we don't actually need the negative coefficient to get the cosine formula
-    //the phase of resulting cosine is directly included inside positive coefficient (e^-jθ)!!!!!!!!!!!!!!!!!!!!
+    //the phase of resulting cosine is directly included inside positive coefficient (e^-jθ)!!!
     //and distance from origin is going to be the same for positive and negative coefficient, so we only need one of them multiplied by 2
 
     //2*|ck| = 2*r
@@ -635,7 +635,7 @@ function DrawFourierDescription_1_Line_5(localContext, textCurrentStartX, textBa
 
     textCurrentStartX += DrawFraction(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "1", P.toFixed(1));
 
-    currentText = "·" + cosineIntegral.toFixed(2).replace("-0", "0") + " = " + (1/P*cosineIntegral).toFixed(2).replace("-0", "0") + "  ➞  Add function y(t) = c₀ = " + (1/P*cosineIntegral).toFixed(2).replace("-0", "0") + " to sum s(t).";
+    currentText = "·" + cosineIntegral.toFixed(2).replace(/^-0.00$/, "0.00") + " = " + (1/P*cosineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + "  ➞  Add function y(t) = c₀ = " + (1/P*cosineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + " to sum s(t).";
 
     SetupTextParameters(localContext, color, font, fontSize);
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
@@ -821,7 +821,7 @@ function DrawFourierDescription_4_Line_4(localContext, textCurrentStartX, textBa
 
     textCurrentStartX += DrawFraction(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "1", GetRoundedNumberToNPlacesAsShortString(P, 2));
 
-    currentText = "·" + cosineIntegral.toFixed(2).replace("-0", "0") + " ± j ";
+    currentText = "·" + cosineIntegral.toFixed(2).replace(/^-0.00$/, "0.00") + " ± j ";
 
     SetupTextParameters(localContext, color, font, fontSize);
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
@@ -829,7 +829,7 @@ function DrawFourierDescription_4_Line_4(localContext, textCurrentStartX, textBa
 
     textCurrentStartX += DrawFraction(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "1", GetRoundedNumberToNPlacesAsShortString(P, 2));
     
-    currentText = "·" + Math.abs(sineIntegral).toFixed(2).replace("-0", "0") + " = " + (1/P*cosineIntegral).toFixed(2).replace("-0", "0") + " ± " + Math.abs(1/P*sineIntegral).toFixed(2).replace("-0", "0") + "j";
+    currentText = "·" + Math.abs(sineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + " = " + (1/P*cosineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + " ± " + Math.abs(1/P*sineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + "j";
 
     SetupTextParameters(localContext, color, font, fontSize);
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
@@ -864,7 +864,7 @@ function DrawFourierDescription_5_Line_3(localContext, textCurrentStartX, textBa
 {
     let currentText;
 
-    currentText = "c" + TranslateWholeNumberIntoUnicodeSubscript(k) + " = " + (1/P*cosineIntegral).toFixed(2).replace("-0", "0") + " ";
+    currentText = "c" + TranslateWholeNumberIntoUnicodeSubscript(k) + " = " + (1/P*cosineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + " ";
     if (sineIntegral < 0)
     {
         currentText += "+ ";
@@ -873,7 +873,7 @@ function DrawFourierDescription_5_Line_3(localContext, textCurrentStartX, textBa
     {
         currentText += "- "
     }
-    currentText += Math.abs(1/P*sineIntegral).toFixed(2).replace("-0", "0") + "j = " + positiveCk[0].toFixed(2).replace("-0", "0") + "e";
+    currentText += Math.abs(1/P*sineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + "j = " + positiveCk[0].toFixed(2).replace(/^-0.00$/, "0.00") + "e";
 
     SetupTextParameters(localContext, color, font, fontSize);
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
@@ -892,7 +892,7 @@ function DrawFourierDescription_5_Line_3(localContext, textCurrentStartX, textBa
 
     textCurrentStartX += DrawExponent(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, exponentText);
 
-    currentText = "  ➞  |c" + TranslateWholeNumberIntoUnicodeSubscript(k) + "| = " + positiveCk[0].toFixed(2).replace("-0", "0") + ",  ";
+    currentText = "  ➞  |c" + TranslateWholeNumberIntoUnicodeSubscript(k) + "| = " + positiveCk[0].toFixed(2).replace(/^-0.00$/, "0.00") + ",  ";
     currentText += "arg(c" + TranslateWholeNumberIntoUnicodeSubscript(k) + ") = " + GetRoundedNumberToNPlacesAsShortString(positiveCk[1]/Math.PI, 2) + "π";
 
     SetupTextParameters(localContext, color, font, fontSize);
@@ -904,7 +904,7 @@ function DrawFourierDescription_5_Line_4(localContext, textCurrentStartX, textBa
 {
     let currentText;
 
-    currentText = "c" + TranslateWholeNumberIntoUnicodeSubscript(-k) + " = " + (1/P*cosineIntegral).toFixed(2).replace("-0", "0") + " ";
+    currentText = "c" + TranslateWholeNumberIntoUnicodeSubscript(-k) + " = " + (1/P*cosineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + " ";
     if (-sineIntegral < 0)
     {
         currentText += "+ ";
@@ -913,7 +913,7 @@ function DrawFourierDescription_5_Line_4(localContext, textCurrentStartX, textBa
     {
         currentText += "- "
     }
-    currentText += Math.abs(1/P*sineIntegral).toFixed(2).replace("-0", "0") + "j = " + negativeCk[0].toFixed(2).replace("-0", "0") + "e";
+    currentText += Math.abs(1/P*sineIntegral).toFixed(2).replace(/^-0.00$/, "0.00") + "j = " + negativeCk[0].toFixed(2).replace(/^-0.00$/, "0.00") + "e";
 
     SetupTextParameters(localContext, color, font, fontSize);
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
@@ -932,7 +932,7 @@ function DrawFourierDescription_5_Line_4(localContext, textCurrentStartX, textBa
 
     textCurrentStartX += DrawExponent(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, exponentText);
 
-    currentText = "  ➞  |c" + TranslateWholeNumberIntoUnicodeSubscript(-k) + "| = " + negativeCk[0].toFixed(2).replace("-0", "0") + ",  ";
+    currentText = "  ➞  |c" + TranslateWholeNumberIntoUnicodeSubscript(-k) + "| = " + negativeCk[0].toFixed(2).replace(/^-0.00$/, "0.00") + ",  ";
     currentText += "arg(c" + TranslateWholeNumberIntoUnicodeSubscript(-k) + ") = " + GetRoundedNumberToNPlacesAsShortString(negativeCk[1]/Math.PI, 2) + "π";
 
     SetupTextParameters(localContext, color, font, fontSize);
@@ -950,7 +950,7 @@ function DrawFourierDescription_5_Line_5(localContext, textCurrentStartX, textBa
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
     textCurrentStartX += localContext.measureText(currentText).width;
 
-    textCurrentStartX += DrawSigmaSumSymbol(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "k =" + k.toString(), "∞");
+    textCurrentStartX += DrawSigmaSumSymbol(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "k = 1", "∞");
 
     currentText = "cₖe";
 
@@ -974,7 +974,7 @@ function DrawFourierDescription_5_Line_5(localContext, textCurrentStartX, textBa
     localContext.fillText(currentText, textCurrentStartX, textBaselineY);
     textCurrentStartX += localContext.measureText(currentText).width;
 
-    textCurrentStartX += DrawSigmaSumSymbol(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "k =" + k.toString(), "∞");
+    textCurrentStartX += DrawSigmaSumSymbol(localContext, textCurrentStartX, textBaselineY, color, font, fontSize, "k = 1", "∞");
 
     currentText = "Cₖ·cos(kω₁t + φₖ) where Cₖ = 2|cₖ|, φₖ = arg(cₖ)";
 
@@ -988,9 +988,9 @@ function DrawFourierDescription_5_Line_6(localContext, textCurrentStartX, textBa
     let currentText;
 
     currentText = "Current cosine: C" + TranslateWholeNumberIntoUnicodeSubscript(k)
-    currentText += " = 2|c" + TranslateWholeNumberIntoUnicodeSubscript(k) + "| = " + (2*positiveCk[0]).toFixed(2).replace("-0", "0") + ", ";
+    currentText += " = 2|c" + TranslateWholeNumberIntoUnicodeSubscript(k) + "| = " + (2*positiveCk[0]).toFixed(2).replace(/^-0.00$/, "0.00") + ", ";
     currentText += "φ" + TranslateWholeNumberIntoUnicodeSubscript(k) + " = arg(c" + TranslateWholeNumberIntoUnicodeSubscript(k) + ") = " + GetRoundedNumberToNPlacesAsShortString(positiveCk[1]/Math.PI, 2) + "π";
-    currentText += "  ➞  " + (2*positiveCk[0]).toFixed(2).replace("-0", "0") + "·cos(" + GetRoundedNumberToNPlacesAsShortString((k*PeriodToFrequency(P)/Math.PI), 2) + "πt";
+    currentText += "  ➞  " + (2*positiveCk[0]).toFixed(2).replace(/^-0.00$/, "0.00") + "·cos(" + GetRoundedNumberToNPlacesAsShortString((k*PeriodToFrequency(P)/Math.PI), 2) + "πt";
     if (positiveCk[1] < 0)
     {
         currentText += " - "
