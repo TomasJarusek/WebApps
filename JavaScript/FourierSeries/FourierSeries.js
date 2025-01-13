@@ -940,7 +940,7 @@ function DrawFourierDescription_5_Line_4(localContext, textCurrentStartX, textBa
     textCurrentStartX += localContext.measureText(currentText).width;
 }
 
-function DrawFourierDescription_5_Line_5(localContext, textCurrentStartX, textBaselineY, font, fontSize, color, k)
+function DrawFourierDescription_5_Line_5(localContext, textCurrentStartX, textBaselineY, font, fontSize, color)
 {
     let currentText;
 

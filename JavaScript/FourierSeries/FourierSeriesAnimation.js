@@ -471,7 +471,7 @@ function InitAnimationCalendar(localContext, animation)
                 DrawFourierDescription_5_Line_2(localContext, 20, 735, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
                 DrawFourierDescription_5_Line_3(localContext, 20, 756, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termPositiveCoefficient);
                 DrawFourierDescription_5_Line_4(localContext, 20, 777, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termNegativeCoefficient);
-                DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, interpolatedColor, termNumber);
+                DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, interpolatedColor);
                 DrawFourierDescription_5_Line_6(localContext, 20, 870, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termPositiveCoefficient);
             });
 
@@ -482,7 +482,7 @@ function InitAnimationCalendar(localContext, animation)
                 DrawFourierDescription_5_Line_2(localContext, 20, 735, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod);
                 DrawFourierDescription_5_Line_3(localContext, 20, 756, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termPositiveCoefficient);
                 DrawFourierDescription_5_Line_4(localContext, 20, 777, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termNegativeCoefficient);
-                DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, "rgb(0,0,0)", termNumber);
+                DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, "rgb(0,0,0)");
                 DrawFourierDescription_5_Line_6(localContext, 20, 870, "Times New Roman", 17, "rgb(0,0,0)", termNumber, functionToAnalyzePeriod, termPositiveCoefficient);
             });
 
@@ -558,7 +558,7 @@ function InitAnimationCalendar(localContext, animation)
                     DrawFourierDescription_5_Line_2(localContext, 20, 735, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
                     DrawFourierDescription_5_Line_3(localContext, 20, 756, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termPositiveCoefficient);
                     DrawFourierDescription_5_Line_4(localContext, 20, 777, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termNegativeCoefficient);
-                    DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, interpolatedColor, termNumber);
+                    DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, interpolatedColor);
                     DrawFourierDescription_5_Line_6(localContext, 20, 870, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termPositiveCoefficient);
 
                     //next description fade in
@@ -585,7 +585,7 @@ function InitAnimationCalendar(localContext, animation)
                     DrawFourierDescription_5_Line_2(localContext, 20, 735, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod);
                     DrawFourierDescription_5_Line_3(localContext, 20, 756, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termPositiveCoefficient);
                     DrawFourierDescription_5_Line_4(localContext, 20, 777, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termIntegrals[0], termIntegrals[1], termNegativeCoefficient);
-                    DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, interpolatedColor, termNumber);
+                    DrawFourierDescription_5_Line_5(localContext, 20, 825, "Times New Roman", 17, interpolatedColor);
                     DrawFourierDescription_5_Line_6(localContext, 20, 870, "Times New Roman", 17, interpolatedColor, termNumber, functionToAnalyzePeriod, termPositiveCoefficient);
 
                     //next description fade in
