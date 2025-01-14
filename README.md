@@ -6,7 +6,7 @@ This repository is hosted at my website https://tomasjarusek.cz/.
 ## Description
 
 ### JavaScript projects
-Web demos about anything that interests me at the moment. They are meant to help visualize concepts from math, physics and computer science in a fun and interactive way. They are implemented in HTML/CSS/JavaScript, use \<canvas\> element for drawing and run purely on client side.
+Web demos about anything that interests me at the moment. They are meant to help visualize concepts from math, physics and computer science in a fun and interactive way. They are implemented in HTML/CSS/JavaScript, use \<canvas\> element for drawing and run purely on a client side.
 
 ### C++ projects
 Short descriptions/demonstrations of my offline C++/OpenGL projects that I implemented. Mostly data structures that I am hoping to use one day to make a RTS videogame from scratch.
